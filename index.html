@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miradi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        z body {
+            background-color: #E2E3E5;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles/parts/header.css">
+
+    <link rel="stylesheet" href="/styles/parts/landing.css">
+    <link rel="stylesheet" href="/styles/parts/about.css">
+    <link rel="stylesheet" href="/styles/parts/focus.css">
+    <link rel="stylesheet" href="/styles/parts/contact.css">
+    <link rel="stylesheet" href="/styles/parts/footer.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header" style="background-color:grey;">
+
+
+        <div id="logo">
+            <!-- <a href="#">Logo</a> -->
+            <img src="/assets/logofooter.png" alt="" style="height:2.5rem;"><span
+                style="color: #E2E3E5; ">MIRADI</span><span style="color: #F68712;"> ROBOTICS</span>
+
+
+        </div>
+        <!-- <div class = "vertical" style="border-left: 6px solid black;
+        height: 100px;
+        position:absolute;
+        left: 50%;"></div> -->
+        <input type="checkbox" id="menu-trigger">
+        <div id="links">
+            <ul>
+                <li><a href="#" data-target="landing" class="btn-scroll-into">Home</a></li>
+                <li><a href="#" data-target="about" class="btn-scroll-into">About</a></li>
+                <li><a href="#" data-target="focus" class="btn-scroll-into">Our Focus</a></li>
+                <li><a href="#" data-target="contact" class="btn-scroll-into">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <label class="menu-trigger-label" for="menu-trigger">
+            <span></span>
+        </label>
+
+    </header>
+
+    <!-- LANDING -->
+    <Section id="landing" style="background-image: url(./assets/miradi.gif);position:relative; ">;
+
+
+        <div class="faceImage">
+            <img src="assets/facialImage.png" alt="" class="ImageFace">
+        </div>
+
+        <div class="line1" style="background-color:#8f9dff;height:75vh; width:.05rem;
+        margin-right:1rem; margin-top:4.2rem;">
+            <p>.</p>
+        </div>
+        <div class="line2" style="background-color:#8f9dff; width:.05rem; height:68vh; margin-top:10rem;">
+            <p>.</p>
+        </div>
+
+
+        <div class="intro">
+            <h2 style="text-align:left;">Technology of the future...<span style="color: #F68712;" class:"today" >Today </span></h2>
+
+            <div class="button">
+                <button style="font: size 15px;">More Info</button>
+            </div>
+
+        </div>
+
+    </Section>
+
+    <!-- ABOUT -->
+    <Section id="about">
+        <div class="title_header" style="text-align: center;">
+            <p class="extend">.</p>
+            <h1 style="position: center;">About <span style="color: #F68712;">Us</span></h1>
+            <p class="extend">.</p>
+        </div>
+        <div id="content_container">
+            <p>
+                <span>We are a technology company that aims to help adoption </span>
+                <br>
+                <span> of AI and Blockchain solutions in Africa</span>
+            </p>
+        </div>
+        <img src="./assets/Phone.png" alt="miradi_temp" id="phone">
+        <!--here-->
+
+    </Section>
+
+    <!-- OUR FOCUS -->
+    <Section id="focus">
+        <div class="title_header" style="text-align: center;">
+            <p class="extend">.</p>
+            <h1 style="align-items: center;">Our <span style="color: #F68712;">Focus</span></h1>
+            <p class="extend">.</p>
+        </div>
+        <div id="content_container">
+            <div class="wrap">
+                <div class="card">
+                    <div class="asset">
+                        <div>
+                            <p class="asset-p2">Artificial</p>
+                            <p class="asset-p2">intelligence</p>
+                        </div>
+                        <img src="/assets/ai.png" alt="">
+                    </div>
+                    <div class="title">
+                        <p>
+                            Artificial
+                            <span>intelligence</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="asset">
+                        <div>
+                            <p class="asset-p2">Digital</p>
+                            <p class="asset-p2">Transformation</p>
+                        </div>
+
+                        <img src="/assets/dtrans.png" alt="">
+                    </div>
+                    <div class="title">
+                        <p>
+                            digital
+                            <span>transformation</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="asset">
+                        <div>
+                            <p class="asset-p2">Block</p>
+                            <p class="asset-p2">Chain</p>
+                        </div>
+
+                        <img src="/assets/bchain.png" alt="">
+                    </div>
+                    <div class="title">
+                        <p>
+                            Block
+                            <span>chain</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="asset">
+                        <div>
+                            <p class="asset-p2">Biometrics Identity</p>
+
+                            <p class="asset-p2">Management</p>
+                        </div>
+                        <img src="/assets/biometrics.png" alt="">
+                    </div>
+                    <div class="title">
+
+                        <p>
+                            Biometrics
+                            <span>Identity</span>
+                            Management
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </Section>
+
+
+    <!-- CONTACT US -->
+    <Section id="contact">
+        <div class="title_header" style="align-items: center;">
+            <h1 style="align-items: center;">Contact <span style="color: #F68712;">Us</span></h1>
+        </div>
+        <div class="box">
+            <img src="/assets/robot.png" class="robot" alt="">
+            <div class="form">
+                <h1>Get In Touch</h1>
+                <div class="input_wrap">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="button" value="SEND">
+                </div>
+            </div>
+        </div>
+
+    </Section>
+
+    <!-- FOOTER -->
+    <Section id="footer">
+        <div class="title_header">
+            <!-- <img src="/assets/logofooter.png" alt=""><h1>Miradi Robotic</h1> -->
+            <img src="/assets/logofooter.png" alt=""><span style="color: #070707;">MIRADI</span><span
+                style="color: #F68712;"> ROBOTICS</span>
+
+        </div>
+        <div id="footer_wrapper">
+            <div class="tab_links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Focus</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href="#">
+                    <img src="/assets/fb.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/assets/twitter.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/assets/ig.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/assets/whatsapp.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/assets/telegram.png" alt="">
+                </a>
+
+            </div>
+            <p>
+                Technology of <span>The future</span> Today
+            </p>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022. All Rights Reserved.</p>
+    </Section>
+
+
+    <script src="/js/scroll.js"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.background = "grey";
+            } else {
+                document.getElementById("header").style.background = "grey";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
