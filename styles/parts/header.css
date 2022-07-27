@@ -1,0 +1,208 @@
+header {
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background 0.3s ease-in;
+}
+@media (max-width: 692px) {
+  header {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 692px) {
+  header .mx-hidden {
+    display: none;
+  }
+}
+@media (max-width: 692px) {
+  header .ms-hidden {
+    display: none;
+  }
+}
+header #menu-trigger {
+  display: none;
+}
+header #menu-trigger:checked ~ #links {
+  z-index: 100;
+  width: 100%;
+  transition: width 0.3s ease-in;
+}
+header #menu-trigger:checked ~ #links ul li {
+  opacity: 1;
+  transition: opacity 0.2s ease-in 0.3s;
+}
+header #menu-trigger:checked ~ .menu-trigger-label:not(.class) span::after {
+  top: 0;
+}
+header #menu-trigger:checked ~ .menu-trigger-label:not(.class) span::before {
+  top: 0;
+}
+header #menu-trigger:checked ~ .menu-trigger-label span {
+  background: transparent;
+  transition: background 0.3s ease-in;
+}
+header #menu-trigger:checked ~ .menu-trigger-label span::after {
+  background-color: #F68712;
+  width: 24px;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease-in;
+}
+header #menu-trigger:checked ~ .menu-trigger-label span::before {
+  background-color: #F68712;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in;
+}
+header #links {
+  padding: 0 4em;
+  transition: width 0.3s ease-in;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 692px) {
+  header #links {
+    padding: 0;
+    width: 0;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+}
+@media (min-width: 692px) {
+  header #links {
+    top: 0;
+    height: 100%;
+  }
+}
+header #links ul {
+  height: 100%;
+  right: 0;
+  color: #F68712;
+  overflow-y: auto;
+}
+@media (max-width: 692px) {
+  header #links ul {
+    color: rgb(0, 0, 0);
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+  }
+}
+@media (min-width: 692px) {
+  header #links ul {
+    display: flex;
+  }
+}
+header #links ul::-webkit-scrollbar {
+  display: none;
+}
+header #links ul a {
+  color: #333;
+}
+@media (min-width: 692px) {
+  header #links ul a {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 692px) {
+  header #links ul a li {
+    height: 100%;
+  }
+}
+header #links ul li {
+  cursor: pointer;
+  transition: opacity 0.1s ease-out;
+}
+@media (max-width: 692px) {
+  header #links ul li {
+    padding: 1rem 1.2em;
+    opacity: 0;
+  }
+  header #links ul li:hover {
+    background-color: #F68712;
+    color: #fff;
+  }
+}
+@media (min-width: 692px) {
+  header #links ul li {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+    padding: 0 0.2rem;
+    position: relative;
+  }
+  header #links ul li::before {
+    top: 0;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #F68712;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform 0.2s ease-out;
+  }
+  header #links ul li:hover::before {
+    transform: scale(1, 1);
+    transition: transform 0.2s ease-in 0.1s;
+  }
+}
+header #links ul li:hover {
+  background-image: linear-gradient(hsla(31deg, 93%, 52%, 0.5), hsla(31deg, 93%, 52%, 0.2), hsla(0deg, 0%, 0%, 0.1));
+}
+header .menu-trigger-label {
+  z-index: 999;
+  cursor: pointer;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 692px) {
+  header .menu-trigger-label {
+    display: none;
+  }
+}
+header .menu-trigger-label span {
+  width: 20px;
+  height: 3px;
+  background: #F68712;
+  transition: background 0.3s ease-out;
+  position: relative;
+  border-radius: 2em;
+}
+header .menu-trigger-label span::before, header .menu-trigger-label span::after {
+  position: absolute;
+  content: "";
+  background-color: #F68712;
+  height: 3px;
+  right: 0;
+  border-radius: 2em;
+  transition: transform 0.3s ease-out;
+}
+header .menu-trigger-label span::before {
+  width: 24px;
+  bottom: 7px;
+}
+header .menu-trigger-label span::after {
+  width: 16px;
+  top: 7px;
+}/*# sourceMappingURL=header.css.map */
