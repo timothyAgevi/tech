@@ -1,0 +1,61 @@
+
+#contact{
+    font-family: $lato;
+    padding: 1.2em;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .box{
+        width: 92%;
+        padding: 2em;
+        background-color: black;
+        position: relative;
+
+        .robot{
+            position: absolute;
+            left: -5.678em;
+            bottom: 0;
+            height: 60vh;
+        }
+        h1{
+            color: #F68712;
+        }
+        display: flex;
+        justify-content: flex-end;
+        .form{
+            width: 30%;
+            h1{
+                font-size: .8em;
+                text-align: end;
+                margin-bottom: .8em;
+            }
+            .input_wrap{
+
+                display: flex;
+                flex-direction: column;
+                    input,textarea{
+                        outline: none;
+                        background-color: rgba(255, 255, 255, 0.205);
+                        padding: 8px;
+                        border: transparent;
+                        margin: 3px 0;
+                        &::placeholder{
+                            color: rgb(238, 213, 167);
+                        }
+                        color: rgb(238, 213, 167);
+
+                    }
+                    input[type="button"]{
+                        background-color: #F68712;
+                        width: fit-content;
+                        font-size: .7em;
+                        padding: 8px 20px;
+                        margin-top: .8em;
+                        cursor: pointer;
+                    }
+            }
+        }
+    }
+}

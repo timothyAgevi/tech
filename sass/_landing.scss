@@ -1,0 +1,56 @@
+#landing{
+    height: 88vh;
+    background-color: black;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    .faceImage{
+        margin: auto;
+    }
+    .faceImage img{
+        display:block;
+        margin-top:5rem;
+        margin-right:10rem;
+        height: 400px;
+        @include tablets{
+            margin-right: 5%;
+        }
+        
+    }
+    .intro{
+        font-family: $lato;
+        margin: auto;
+        padding: 1.2em;
+
+        h1{
+            font-size: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        h2{
+            color: #fff;
+            margin-top: 40%;
+            font-size: 2.0em;
+            width: 30%;
+            text-align: left;
+            @include tablets{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        .button{
+            margin-top: 4em;
+            display: flex;
+            justify-content: center;
+            button{
+                cursor: pointer;
+                background: transparent;
+                border: 1px solid #F68712;
+                padding: 15px 25px;
+                color: #F68712;
+            }
+        }
+    }
+}

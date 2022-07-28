@@ -1,0 +1,230 @@
+// viewports
+$tablets: 692px;
+$desktop: 836px;
+
+@mixin mobile {
+    @media (max-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+// HEADER
+header{
+    height: 12vh;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background .3s ease-in;
+    @include mobile{
+        justify-content: space-between;
+    }
+    .mx-hidden{
+        @include tablets{
+            display: none;
+        }
+    }
+    .ms-hidden{
+        @include mobile {
+            display: none;
+        }
+    }
+    #menu-trigger{
+        display: none;
+        &:checked~#links{
+            z-index: 5;
+            width: 100%;
+            transition: width .3s ease-in;
+            ul{
+                font-family: $mont;
+                li{
+                    opacity: 1;
+                    transition: opacity .2s ease-in .3s;
+                }
+            }
+        }
+        &:checked~.menu-trigger-label{
+            &:not(.class){
+                span{
+                    &::after{
+                        top: 0;
+                    }
+                    &::before{
+                        top: 0;
+                    }
+                }
+            }
+            span{
+                background: transparent;
+                transition: background .3s ease-in;
+                &::after{
+                    background-color: $themeColor;
+                    width: 24px;
+                    transform: rotate(-45deg);
+                    transition: transform .3s ease-in;
+                }
+                &::before{
+                    background-color: $themeColor;
+                    transform: rotate(45deg);
+                    transition: transform .3s ease-in;
+                }
+            }
+        }
+    }
+    #links{
+        padding: 0 4em;
+        @include mobile {
+            padding: 0;
+            width: 0;
+            // background-color: rgba(0,0,0,.5);
+            background-color:grey;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+        }
+        transition: width .3s ease-in;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+            @include tablets {
+                top: 0;
+                height: 100%;
+            }
+        
+        ul{
+            height: 100%;
+            @include mobile {                
+                color: rgb(0, 0, 0);
+                width: 60%;
+                background-color: rgb(255, 255, 255);
+                padding-top: 60px;
+            }
+            right: 0;
+            color: $themeColor;
+            overflow-y: auto;
+            @include tablets {
+                display: flex;
+            }
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            
+            a{
+                color: #333;
+                @include tablets {
+                    color: #fff;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            li{
+                @include tablets {
+                    height: 100%;
+                }
+            }
+        }
+            li{
+                font-family: $mont;
+                font-size: .7rem;
+                @include mobile {                  
+                    padding: 1rem 1.2em;
+                    opacity: 0;
+                    &:hover{
+                        background-color: $themeColor;
+                        color: #fff;
+                    }
+                }
+                @include tablets {
+                    font-size: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 .3rem;
+                    padding: 0 .2rem;
+                    position: relative;
+                    &::before{                        
+                        top: 0;
+                        position: absolute;
+                        content: '';
+                        height: 3px;
+                        width: 100%;
+                        background-color: $themeColor;
+                        transform-origin: left;
+                        transform: scale(0,1);
+                        transition: transform .2s ease-out;
+                    }
+                    &:hover{
+                        &::before{
+                            transform: scale(1,1);
+                            transition: transform .2s ease-in .1s;
+                        }
+                    }
+                }
+                cursor: pointer;
+                transition: opacity .1s ease-out;
+                &:hover{
+                    background-image:linear-gradient(hsla(31, 93%, 52%,0.5),hsla(31, 93%, 52%,0.2),hsla(0, 0%, 0%,0.1));
+                }
+            }
+        }
+    }
+    .menu-trigger-label{
+        z-index: 999;
+        cursor: pointer;
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include tablets {
+            display: none;
+        }
+        span{
+            width: 20px;
+            height: 3px;
+            background: $themeColor;
+            transition: background .3s ease-out;
+            position: relative;
+            border-radius: 2em;
+            &::before,&::after{
+                position: absolute;
+                content: '';
+                background-color: $themeColor;
+                height: 3px;
+                right: 0;
+                border-radius: 2em;
+                transition: transform .3s ease-out;
+            }
+            &::before{
+                width: 24px;
+                bottom: 7px;
+            }
+            &::after{
+                width: 16px;
+                top: 7px;
+            }
+        }
+    }
+
+    #logo{
+        font-family: $lato;
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 697px){
+    #landing{
+        height: 60vh;
+        width: 100vw;
+
+        .faceImage{
+            display: none;
+        }
+
+        .intro{
+            font-family: $lato;
+            margin: auto;
+            padding: 1.2em;
+
+            h2{
+                width: 90%;
+                text-align: center;
+            }
+
+        }
+    }
+        
+    #about{
+        padding: 3rem 0;
+        min-height: 50vh;
+
+        #phone{
+            top: 2rem;
+            width: 90vw;
+            height: auto;
+        }
+
+        #content_container{
+            width: 96%;
+            margin: 0 auto;
+            p{
+                font-family: $mont;
+                text-align: center;
+                margin-top: 1.2em;
+            }
+        }
+    }
+
+    #focus{
+        padding: 1.2em 1.2em 7em 1.2em;   
+
+        .title_header{
+            font-family: $lato;
+            margin-bottom: 1rem;
+
+        }
+
+    }
+
+    #contact{
+        font-family: $lato;
+        padding: 1.2em;
+        padding-top: 0px;
+
+        .box{
+            width: 92%;
+            margin-top: 1rem;
+    
+            .robot{
+                display: none;
+            }
+            
+            .form{
+                width: 98%;
+                h1{
+                    font-size: .8em;
+                    text-align: end;
+                    margin-bottom: .8em;
+                }
+
+            }
+        }
+    }
+
+    #footer{
+
+        #footer_wrapper{
+            margin-bottom: 2em;
+            .tab_links{
+                ul{
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-top: 1em;
+                    li{
+                        font-weight: 500;
+                        margin: 1em 1em;
+                    }
+                }
+            }
+
+        }
+    }
+}

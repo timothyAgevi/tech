@@ -1,0 +1,39 @@
+
+#about{
+    padding: 5rem 0;
+    min-height: 60vh;
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+    .title_header{
+        font-family: $lato;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        .extend{
+            background-color:black;
+            color:transparent;
+            width:2rem;
+            height:.3rem;
+            border-radius:.5rem;
+        }
+        h1{
+            margin-inline:1rem;
+        }
+    }
+    #phone{
+        position: relative;
+        left: 0%;
+        top: 4rem;
+        width: 500px;
+        height: 200px;
+    }
+    #content_container{
+        p{
+            font-family: $mont;
+            text-align: center;
+            margin-top: 3em;
+        }
+    }
+}

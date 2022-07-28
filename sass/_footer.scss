@@ -1,0 +1,42 @@
+
+#footer{
+    font-family: $lato;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .8em;
+    span{
+        color: #F68712;
+    }
+    p{
+        font-family: $lato;
+        font-weight: 900;
+        text-align: center;
+    }
+    .copyright{
+        font-size: .7em;
+    }
+    #footer_wrapper{
+        margin-bottom: 2em;
+        .tab_links{
+            ul{
+                font-family: $mont;
+                display: flex;
+                li{
+                    font-weight: 500;
+                    margin: 2em 1.2em;
+                }
+            }
+        }
+        .socials{
+            text-align: center;
+            margin: 4em 0;
+            img{
+                height: 24px;
+                margin: 0 1em;
+            }
+        }
+    }
+}

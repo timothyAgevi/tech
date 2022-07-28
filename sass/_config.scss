@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Montserrat+Alternates&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #E2E3E5;
+    color: rgb(32, 25, 22);
+}
+
+$themeColor: #F68712; 
+$lato: 'Lato', sans-serif;
+$mont: 'Montserrat Alternates', sans-serif;
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Montserrat Alternates', sans-serif;
