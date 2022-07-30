@@ -28,13 +28,18 @@
   position: absolute;
   left: -5.678em;
   bottom: 0;
-  height: 60vh;
+  height: 60%;
 }
 @media (max-width: 692px) {
   #contact .box .robot {
     height: auto;
     width: 60vw;
     left: -3.8em;
+  }
+}
+@media (min-width: 692px) {
+  #contact .box .robot {
+    height: 100%;
   }
 }
 #contact .box h1 {
