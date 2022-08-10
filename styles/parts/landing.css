@@ -12,15 +12,25 @@
   background-position: center;
   margin-top: -80px;
 }
+#landing::before, #landing::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: #8f9dff;
+}
+#landing::before {
+  height: 70vh;
+  left: 52%;
+  top: 150px;
+}
+#landing::after {
+  height: 60vh;
+  left: 54%;
+  top: 250px;
+}
 @media (max-width: 50%) {
   #landing {
     align-items: center;
-  }
-}
-@media (min-width: 692px) {
-  #landing {
-    display: flex;
-    justify-content: flex-end;
   }
 }
 #landing .faceImage {
@@ -30,6 +40,12 @@
 #landing .ImageFace {
   position: absolute;
   top: 25%;
+}
+@media (min-width: 692px) {
+  #landing .ImageFace {
+    height: 70vh;
+    left: 1.2em;
+  }
 }
 #landing .intro {
   position: absolute;
@@ -42,8 +58,17 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 100%;
     text-align: center;
+  }
+}
+@media (min-width: 692px) {
+  #landing .intro {
+    top: 40%;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 #landing .intro h1 {
@@ -59,7 +84,9 @@
 }
 @media (min-width: 692px) {
   #landing .intro h2 {
-    width: 100%;
+    font-size: 2em;
+    width: 70%;
+    text-align: left;
     margin-top: 0;
   }
 }

@@ -36,12 +36,25 @@ $mobile:50%;
     background-size: cover;
     background-position: center;
     margin-top: -80px;
+    &::before,&::after{
+        position: absolute;
+        content: '';
+        width: 1px;
+        background-color: #8f9dff;
+    }
+    &::before{
+        height: 70vh;
+        left: 52%;
+        top: 150px;
+    }
+    &::after{
+        height: 60vh;
+        left: 54%;
+        top: 250px;
+    }
+
     @include mobile{ 
         align-items: center;
-    }
-    @include tablets{    
-        display: flex;
-        justify-content: flex-end;
     }
     .faceImage{
         position: relative;
@@ -50,6 +63,10 @@ $mobile:50%;
     .ImageFace{
         position: absolute;
         top: 25%;
+        @include tablets{
+            height: 70vh;
+            left: 1.2em;
+        }
     }
     .intro{
         position: absolute;
@@ -58,8 +75,15 @@ $mobile:50%;
         padding: 1.2em;
         @include mobile{
             height: fit-content;
-            width: 100%;
             text-align: center;
+        }        
+        @include tablets{
+            top: 40%;
+            left: 50%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
         h1{
@@ -73,7 +97,9 @@ $mobile:50%;
             font-size: 1.5em;
             text-align: center;
             @include tablets{
-                width: 100%;
+                font-size: 2em;
+                width: 70%;
+                text-align: left;
                 margin-top: 0;
             }
         }
@@ -81,6 +107,9 @@ $mobile:50%;
             margin-top: 4em;
             display: flex;
             justify-content: center;
+            @include tablets{
+                
+            }
             button{
                 background: transparent;
                 border: 1px solid #F68712;
