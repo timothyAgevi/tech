@@ -1,7 +1,35 @@
+// Colors
+$themeColor: #F68712; 
+
+// viewports
+$tablets: 692px;
+$desktop: 836px;
+
+@mixin mobile {
+    @media (max-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+
 #focus{
     padding: 1.2em; 
     padding-top: 80px;   
     align-items: center;
+    @include mobile{
+        padding: 0;
+        padding-top: 80px;
+    }
     .title_header{
         display:flex;
         justify-content:center;

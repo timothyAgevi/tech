@@ -26,15 +26,15 @@
 }
 #contact .box .robot {
   position: absolute;
-  left: -5.678em;
+  left: -4.178em;
   bottom: 0;
-  height: 60vh;
+  height: 300px;
 }
 @media (max-width: 692px) {
   #contact .box .robot {
     height: auto;
     width: 60vw;
-    left: -3.8em;
+    left: -3.34em;
   }
 }
 #contact .box h1 {

@@ -3,6 +3,12 @@
   padding-top: 80px;
   align-items: center;
 }
+@media (max-width: 692px) {
+  #focus {
+    padding: 0;
+    padding-top: 80px;
+  }
+}
 #focus .title_header {
   display: flex;
   justify-content: center;
