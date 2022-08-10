@@ -3,39 +3,38 @@
 }
 
 #landing {
+  height: 100vh;
   background-color: black;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/bg.png");
+  position: relative;
+  background: url("/assets/miradi.gif");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: -80px;
 }
 @media (max-width: 50%) {
   #landing {
     align-items: center;
   }
 }
-#landing .faceImage {
-  margin: auto;
-}
-@media (max-width: 50%) {
-  #landing .faceImage {
-    width: 80%;
-  }
-}
-#landing .faceImage img {
-  display: block;
-  margin-top: 5rem;
-  margin-right: 10rem;
-  height: 400px;
-}
 @media (min-width: 692px) {
-  #landing .faceImage img {
-    margin-right: 5%;
+  #landing {
+    display: flex;
+    justify-content: flex-end;
   }
+}
+#landing .faceImage {
+  position: relative;
+  height: 100vh;
+}
+#landing .ImageFace {
+  position: absolute;
+  top: 25%;
 }
 #landing .intro {
-  margin: auto;
+  position: absolute;
+  top: 25%;
+  margin: 3em;
   padding: 1.2em;
 }
 @media (max-width: 50%) {
@@ -55,9 +54,8 @@
 #landing .intro h2 {
   color: #fff;
   margin-top: 40%;
-  font-size: 2em;
-  width: 30%;
-  text-align: left;
+  font-size: 1.5em;
+  text-align: center;
 }
 @media (min-width: 692px) {
   #landing .intro h2 {
