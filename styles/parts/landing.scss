@@ -28,7 +28,7 @@ $mobile:50%;
 }
 
 #landing{
-    height: 100vh;
+    height: 64vh;
     background-color: black;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg.png');
     position: relative;
@@ -43,14 +43,14 @@ $mobile:50%;
         background-color: #8f9dff;
     }
     &::before{
-        height: 70vh;
+        height: 30vh;
         left: 52%;
         top: 150px;
     }
     &::after{
-        height: 60vh;
-        left: 54%;
-        top: 250px;
+        height: 30vh;
+        left: 53%;
+        top: 200px;
     }
 
     @include mobile{ 
@@ -58,19 +58,20 @@ $mobile:50%;
     }
     .faceImage{
         position: relative;
-        height: 100vh;
+        top: 35%;
     }
     .ImageFace{
         position: absolute;
-        top: 25%;
+        top: 20%;
+        height: 40vh;
+        margin-left: 15%;
         @include tablets{
-            height: 70vh;
             left: 1.2em;
         }
     }
     .intro{
         position: absolute;
-        top: 25%;
+        top: 20%;
         margin: 3em;
         padding: 1.2em;
         @include mobile{
@@ -104,7 +105,7 @@ $mobile:50%;
             }
         }
         .button{
-            margin-top: 4em;
+            margin-top: 2em;
             display: flex;
             justify-content: center;
             @include tablets{
@@ -113,7 +114,7 @@ $mobile:50%;
             button{
                 background: transparent;
                 border: 1px solid #F68712;
-                padding: 15px 25px;
+                padding: 10px 25px;
                 color: #F68712;
             }
         }

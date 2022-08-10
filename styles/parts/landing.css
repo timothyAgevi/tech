@@ -3,7 +3,7 @@
 }
 
 #landing {
-  height: 100vh;
+  height: 64vh;
   background-color: black;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/bg.png");
   position: relative;
@@ -19,14 +19,14 @@
   background-color: #8f9dff;
 }
 #landing::before {
-  height: 70vh;
+  height: 30vh;
   left: 52%;
   top: 150px;
 }
 #landing::after {
-  height: 60vh;
-  left: 54%;
-  top: 250px;
+  height: 30vh;
+  left: 53%;
+  top: 200px;
 }
 @media (max-width: 50%) {
   #landing {
@@ -35,21 +35,22 @@
 }
 #landing .faceImage {
   position: relative;
-  height: 100vh;
+  top: 35%;
 }
 #landing .ImageFace {
   position: absolute;
-  top: 25%;
+  top: 20%;
+  height: 40vh;
+  margin-left: 15%;
 }
 @media (min-width: 692px) {
   #landing .ImageFace {
-    height: 70vh;
     left: 1.2em;
   }
 }
 #landing .intro {
   position: absolute;
-  top: 25%;
+  top: 20%;
   margin: 3em;
   padding: 1.2em;
 }
@@ -91,13 +92,13 @@
   }
 }
 #landing .intro .button {
-  margin-top: 4em;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
 }
 #landing .intro .button button {
   background: transparent;
   border: 1px solid #F68712;
-  padding: 15px 25px;
+  padding: 10px 25px;
   color: #F68712;
 }/*# sourceMappingURL=landing.css.map */
