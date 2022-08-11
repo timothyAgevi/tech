@@ -1,9 +1,16 @@
 #about {
-  height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
-  padding-top: 60px;
+  padding: 60px 1.2em;
   align-items: center;
   text-align: center;
+}
+@media (min-width: 892px) {
+  #about {
+    height: 25vh;
+  }
 }
 #about .title_header {
   display: flex;
@@ -22,13 +29,12 @@
 }
 #about #phone {
   position: absolute;
-  left: 0;
-  width: 500px;
-  height: 200px;
+  left: 1em;
+  width: 200px;
 }
 @media (min-width: 892px) {
   #about #phone {
-    top: 60%;
+    top: 40%;
     width: 300px;
     transform: rotate(15deg);
   }

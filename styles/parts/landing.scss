@@ -36,6 +36,7 @@ $mobile:50%;
     background-size: cover;
     background-position: center;
     margin-top: -80px;
+    overflow: hidden;
     &::before,&::after{
         position: absolute;
         content: '';
@@ -70,16 +71,16 @@ $mobile:50%;
         }
     }
     .intro{
+        width: 100%;
         position: absolute;
-        top: 20%;
-        margin: 3em;
         padding: 1.2em;
+        top: 20%;
         @include mobile{
             height: fit-content;
             text-align: center;
         }        
         @include tablets{
-            top: 40%;
+            top: 45%;
             left: 50%;
             display: flex;
             align-items: flex-start;
@@ -99,7 +100,7 @@ $mobile:50%;
             text-align: center;
             @include tablets{
                 font-size: 2em;
-                width: 70%;
+                width: 50%;
                 text-align: left;
                 margin-top: 0;
             }

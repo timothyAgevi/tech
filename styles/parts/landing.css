@@ -11,6 +11,7 @@
   background-size: cover;
   background-position: center;
   margin-top: -80px;
+  overflow: hidden;
 }
 #landing::before, #landing::after {
   position: absolute;
@@ -49,10 +50,10 @@
   }
 }
 #landing .intro {
+  width: 100%;
   position: absolute;
-  top: 20%;
-  margin: 3em;
   padding: 1.2em;
+  top: 20%;
 }
 @media (max-width: 50%) {
   #landing .intro {
@@ -64,7 +65,7 @@
 }
 @media (min-width: 692px) {
   #landing .intro {
-    top: 40%;
+    top: 45%;
     left: 50%;
     display: flex;
     align-items: flex-start;
@@ -86,7 +87,7 @@
 @media (min-width: 692px) {
   #landing .intro h2 {
     font-size: 2em;
-    width: 70%;
+    width: 50%;
     text-align: left;
     margin-top: 0;
   }

@@ -26,9 +26,14 @@
 }
 #focus #content_container .wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
   grid-gap: 4em;
   padding: 2em;
+}
+@media (min-width: 692px) {
+  #focus #content_container .wrap {
+    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+    grid-gap: 1.2em;
+  }
 }
 #focus #content_container .wrap .card {
   width: 100%;

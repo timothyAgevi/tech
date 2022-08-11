@@ -23,13 +23,13 @@ $mobile: 600px;
 
 
 #about{
-    height: 50vh;
+    height: fit-content;
     position: relative;
-    padding-top: 60px;
+    padding: 60px 1.2em;
     align-items: center;
     text-align: center;
-    @include mobile{
-        
+    @include tablets{
+        height: 25vh;
     }
     .title_header{
         display:flex;
@@ -48,11 +48,10 @@ $mobile: 600px;
     }
     #phone{
         position: absolute;
-        left: 0;
-        width: 500px;
-        height: 200px;
+        left: 1em;
+        width: 200px;
         @include tablets{
-            top: 60%;
+            top: 40%;
             width: 300px;
             transform: rotate(15deg);
         }
